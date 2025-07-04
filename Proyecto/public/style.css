@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('/img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  #header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+  
+  main {
+    margin-top: 30px;
+  }
+  
+  a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
