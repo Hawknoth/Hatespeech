@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>No al discurso de odio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
+  <!-- Google Font + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-pVI6pJQ8Of+6XsUUl5UqXxyk4o1LfEoUM+Fu0gEd/Py9VQl2mkCxkOazfyvPCJIKN2e6G2U5f6C2zFhVYFmDEA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="container">
-    <header>
-      <img src="logo.png" alt="Logo sitio" class="logo" />
+
+    <header class="sticky">
+      <img src="logo.png" alt="Logo" class="logo" />
       <nav>
         <ul class="navbar">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#alertas">Signos de alerta</a></li>
           <li><a href="#consejos">Consejos</a></li>
-          <li><a href="#footer">Contacto</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="inicio">
+    <section id="inicio" class="section">
       <h1>No al discurso de odio</h1>
       <p>El discurso de odio daña a personas, comunidades y a toda la sociedad. Es importante identificarlo, denunciarlo y educar para prevenirlo.</p>
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/j7QjhIQNbPU" frameborder="0" allowfullscreen></iframe>
-    </div>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/j7QjhIQNbPU" frameborder="0" allowfullscreen></iframe>
+      </div>
     </section>
 
-    <section id="alertas">
+    <section id="alertas" class="section">
       <h2>⚠️ Signos de alerta</h2>
       <ul>
         <li>Lenguaje violento o despectivo hacia un grupo</li>
@@ -39,7 +44,7 @@
       </ul>
     </section>
 
-    <section id="consejos">
+    <section id="consejos" class="section">
       <h2>✅ ¿Qué hacer?</h2>
       <ul>
         <li>No compartas contenido de odio, aunque sea para criticarlo</li>
@@ -49,12 +54,37 @@
       </ul>
     </section>
 
-    <footer id="footer">
+    <section id="contacto" class="section contact">
+      <h2>📬 Contacto rápido</h2>
+      <div class="icons">
+        <a href="mailto:adrian.landeros7309@alumnos.udg.mx"><i class="fas fa-envelope"></i><span>Email</span></a>
+        <a href="tel:+523312345678"><i class="fas fa-phone"></i><span>Llamar</span></a>
+        <a href="https://www.linkedin.com/in/tu-perfil"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+        <a href="https://github.com/Hawknoth/Hatespeech"><i class="fab fa-github"></i><span>GitHub</span></a>
+      </div>
+    </section>
+
+    <footer class="footer">
       <p>Curso: Conceptualización de servicios en la nube</p>
-      <p>Nombre: Adrian Landeros Valadez</p>
+      <p>Nombre: Adrian</p>
       <p>Código: 217873091</p>
-      <p>Correo: adrian.landeros7309@alumnos.udg.mx</p>
     </footer>
   </div>
+
+  <!-- Botón Back to Top -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    // Mostrar / Ocultar botón
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    // Al clicar, subir suavemente
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
+
